@@ -40,9 +40,10 @@ abstract class House {
 
 // Клас мого будинку
 class MyHouse extends House {
-  constructor(key: Key) {
-    super(key);
-  }
+  // так як нових властивостей constructor і super не потрібні
+  // constructor(key: Key) {
+  //   super(key);
+  // }
 
   openDoor(key: Key): void {
     if (key.getSignature() === this.key.getSignature()) {
